@@ -556,7 +556,7 @@ body.login {
 .note-title-field {
   width: 40%;
   font-size: 1.85rem;
-  font-family: 'Montserrat Condensed', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   color: #0d3b66;
   border: 1px solid transparent;
@@ -901,8 +901,8 @@ body.login {
   z-index: 2;
 }
 .page-banner__title {
-  font-family: 'Montserrat Condensed', sans-serif;
-  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 3.6rem;
   margin: 0 0 1rem 0;
   color: #fff;
@@ -1197,7 +1197,7 @@ body.admin-bar .search-overlay {
 }
 .headline {
   margin: 0;
-  font-family: 'Montserrat Condensed', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 .headline--large {
@@ -1268,8 +1268,8 @@ body.admin-bar .search-overlay {
 .generic-content h4,
 .generic-content h5,
 .generic-content h6 {
-  font-family: 'Montserrat Condensed', sans-serif;
-  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -1295,7 +1295,7 @@ body.admin-bar .search-overlay {
   .generic-content h1 {
     font-size: 6.25rem;
   }
-  .generic-content h2 {
+  /* .generic-content h2 {
     font-size: 4rem;
   }
   .generic-content h3 {
@@ -1306,6 +1306,21 @@ body.admin-bar .search-overlay {
   }
   .generic-content h5 {
     font-size: 1.9rem;
+  }
+  .generic-content h6 {
+    font-size: 1.15rem;
+  } */
+  .generic-content h2 {
+    font-size: 3.1rem;
+  }
+  .generic-content h3 {
+    font-size: 2.6rem;
+  }
+  .generic-content h4 {
+    font-size: 2.1rem;
+  }
+  .generic-content h5 {
+    font-size: 1.6rem;
   }
   .generic-content h6 {
     font-size: 1.15rem;
@@ -1404,7 +1419,6 @@ body.admin-bar .search-overlay {
 .page-links {
   position: relative;
   z-index: 1;
-  background-color: #faf0ca;
   margin: 0 0 40px 0;
 }
 @media (min-width: 767px) {
@@ -1419,16 +1433,36 @@ body.admin-bar .search-overlay {
   font-weight: normal;
   text-align: center;
   padding: 20px 0;
-  background-color: #0d3b66;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    to right,
+    #145592 0%,
+    #1369b4 51%,
+    #145592 100%
+  );
   color: #fff;
+  transition: 0.5s;
+}
+.page-links__title:hover {
+  background-position: right center;
 }
 .page-links__title a {
   color: #fff;
   text-decoration: none;
-  background-color: #0d3b66;
 }
 .page-links li {
   border-top: 1px solid #f4de89;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    to right,
+    #fff3bf 0%,
+    #ffec99 51%,
+    #fff3bf 100%
+  );
+  transition: 0.5s;
+}
+.page-links li:hover {
+  background-position: right center;
 }
 .page-links li:first-child {
   border-top: none;
@@ -1436,7 +1470,12 @@ body.admin-bar .search-overlay {
 .page-links__active,
 .page-links .current_page_item {
   text-align: center;
-  background-color: #f4e6b1;
+  background-image: linear-gradient(
+    to right,
+    #ffec99 0%,
+    #ffe066 51%,
+    #ffec99 100%
+  );
   color: #0d3b66;
   font-weight: bold;
 }
@@ -1450,7 +1489,6 @@ body.admin-bar .search-overlay {
 }
 .page-links li a:hover {
   color: #0a2b4b;
-  background-color: #f2e3aa;
 }
 .acf-map {
   width: 100%;
