@@ -19,9 +19,9 @@
             <div class="site-header__menu group">
                 <nav class="main-navigation">
                     <!-- <?php
-                            wp_nav_menu(array(
+                            wp_nav_menu([
                                 'theme_location' => 'headerMenuLocation'
-                            ));
+                            ]);
                             ?> -->
 
                     <ul>

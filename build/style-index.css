@@ -1451,7 +1451,7 @@ body.admin-bar .search-overlay {
   text-decoration: none;
 }
 .page-links li {
-  border-top: 1px solid #f4de89;
+  border-top: 1px solid #ffe88e;
   background-size: 200% auto;
   background-image: linear-gradient(
     to right,
@@ -1459,7 +1459,7 @@ body.admin-bar .search-overlay {
     #ffec99 51%,
     #fff3bf 100%
   );
-  transition: 0.5s;
+  transition: linear 0.5s;
 }
 .page-links li:hover {
   background-position: right center;
